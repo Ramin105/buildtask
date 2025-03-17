@@ -486,12 +486,17 @@ button:hover {
   display: flex;
 }
 
+footer{
+  width: 100%;
+}
+
 .son {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #222222;
   height: 70vh;
+  width: 100%;
 }
 .son2 {
   width: 73%;
@@ -605,4 +610,107 @@ input {
   background-color: #fab700;
   color: black;
   transition: 0.3s;
+}
+
+.hamburger{
+  display: none;
+}
+
+
+@media screen and (min-width:300px) and (max-width:576px) {
+  .cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .card{
+    width: 100%;
+  }
+  .header{
+    display: flex;
+justify-content: space-between;
+width: 95%;
+nav{
+  display: none;
+  
+}
+.hamburger{
+  display: block;
+}
+
+  }
+ 
+  .containermeet, .cardsmeet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+
+  .numbercontainer, .numbercontainer2 ,.somecards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin: 100px 0;
+  }
+
+  .somecard{
+    width: 95%;
+  }
+  .commetcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+
+  }
+  .commetcard{
+    width: 90%;
+  }
+
+  .sponsorcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+  }
+.son2, .son, .row{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  gap: 20px;
+  padding: 50px 0;
+}
+.about{
+  width: 80%;
+}
+.contact{
+  width: 80%;
+}
+.newsletter{
+  width: 80%;
+}
+.cardmeet{width: 40%;}
+.cardsmeet{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 250px;
+  margin-bottom: 100px;
+}
+.headmeet{
+  padding: 0px;
+  margin: 0;
+}
+ 
 }
